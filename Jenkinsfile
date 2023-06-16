@@ -9,7 +9,7 @@ pipeline {
                 sh 'cat "main.txt"'
             }
         }
-        stage (FEATURE1 BRANCH) {
+        stage ("FEATURE1 BRANCH") {
             when {
                 branch 'feature1'
             }
