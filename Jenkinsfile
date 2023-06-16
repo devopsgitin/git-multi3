@@ -17,5 +17,13 @@ pipeline {
                 sh 'cat "feature1.txt"'
             }
         }
+        stage ("FEATURE2 BRANCH") {
+            when {
+                branch 'feature2'
+            }
+            steps {
+                sh 'cat "feature2.txt"'
+            }
+        }
     }
 }
